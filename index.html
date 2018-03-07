@@ -1,35 +1,49 @@
-<!DOCTYPE HTML>
-<title>Vida Sana - Mote con Huesillos</title>
+<!DOCTYPE html>
+<html>
 <style>
-body { 
+#grid { 
   display: grid;
-  grid-template-areas: 
-    "header"
-    "nav content"
-    "footer";
-  grid-template-rows: 60px 60px;
-  grid-template-columns: 20% 1fr 15%;
-  grid-gap: 10px;
-  height: 100vh;
-  margin: 0;
+  
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  justify-items: left;
   }
-#pageHeader {
-  grid-area: header;
+ 
+
+/* grid items */
+#grid > div {
+  
+  padding: .5em;
+  background: gold;
+  text-align: center;
+  width: 450px;
+  font-family: Calibri;
+	font-size: 12px;
+	line-height: 15.6px;
 }
-#pageFooter {
-  grid-area: footer;
-}
-#mainContent { 
-  grid-area: content;      
-  }
-#mainNav { 
-  grid-area: nav; 
-  }
-header, footer, content, nav, div {
-  padding: 20px;
-  background: gray;
+  
+  .social {
+  font-family: "trebuchet MS", sans-serif;
+  font-size: 9px;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 20px;
 }
 </style>
+
 <body>
-  <header id="pageHeader">Header</header>
-  <article id="mainContent">Article</article>
+
+  
+  <div id="grid">
+  <div class="social">portfolio | about | contact</div>
+    <div>
+    Hello, I am an aspiring game developer5.</div>
+
+</div>
+</body>
+</html>
